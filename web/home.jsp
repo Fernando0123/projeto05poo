@@ -23,28 +23,23 @@
 %>
 <html>
     <head>
-        
+         <link href="css/newcss.css" rel="stylesheet" type="text/css">
         <title>Web Quiz</title>
     </head>
     <body>
         
         
         <br/>
-        <p class="corpo" align="center">Para jogar o quiz sistema informe o seu login:</p>
+       <p class="corpo" align="center">Para jogar o quiz sistema informe o seu login:</p>
         <form method="post" action="logar.jsp">
             <center class="corpo">
-                Login:
-                <table>
-                    <tr>
-                    <td><input type="text" name="username" id="username" class="form-control" required><br></td>
-                    </tr>
-                </table>
+                    <input type="text" name="username" id="username" class="form-control" required><br>
                 <input type="submit" class="btn btn-dark" name="entrar" value="Entrar">
             </center>
         </form>
         <br/><hr/><br/>
         
-        <p class="titulo" align="center">RANK</p>
+       
         <br>
         <%if (tested) { %>
             <hr>
@@ -52,7 +47,33 @@
             <hr>
         <% } %>
         
+          <h1>Últimos testes realizados &emsp; &emsp; &emsp; Melhores notas</h1>
         
+        <table id="t1" border =1 >
+            <tr>
+    <th>Nome</th>   
+    <th>Nota</th>  
+</tr>
+       <%  for (int i = 0; i <11; i++) { %> 
+<tr>
+ 
+<td>Nome usuário</td>
+<td><%  %></td>
+
+</tr>
+    <%   } %> 
+        <table id="t2" border =1 >
+            <tr>
+    <th>Nome</th>   
+    <th>Nota</th>  
+</tr>
+       <%  for (int i = 0; i <11; i++) { %> 
+<tr>
+<td>Nome usuário</td>
+<td>Nota usuário</td>
+</tr>
+    <%   } %> 
+        </table>
         
     
     </body>
