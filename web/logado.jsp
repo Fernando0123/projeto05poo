@@ -27,7 +27,7 @@
 
 <html>
     <head>
-        
+        <link href="css/newcss.css" rel="stylesheet" type="text/css">
         <title>Web Quiz</title>
     </head>
     <body>
@@ -40,9 +40,38 @@
             <p class="titulo">Seja bem-vindo <%= session.getAttribute("loginUsuario") %> :) </p><br>
             <p class="titulo">Para iniciar o quiz, clique abaixo:</p><br>
             <h5><a href="quiz.jsp"><button class="btn btn-outline-light" type="submit" name="entrar">Realizar o Quiz</button></a></h5>
+           
+        </center>
             
-            <br>
+             <hr/>  
+        <h1 class="">Últimos testes realizados &emsp; &emsp; Melhores notas de: <%=session.getAttribute("loginUsuario")%></h1>
         
+        <table id="t1" border =1 >
+            <tr>
+      
+    <th>Nota</th>  
+</tr>
+       <%  for (int i = 0; i <10; i++) { %> 
+<tr>
+ 
+  
+<td>Nota Usuário</td>
+
+</tr>
+    <%   } %> 
+        <table id="t2" border =1 >
+            <tr>
+       
+    <th>Nota</th>  
+</tr>
+       <%  for (int i = 0; i <10; i++) { %> 
+<tr>
+
+<td>Nota usuário</td>
+</tr>
+    <%   } %> 
+        </table>
+        <center>
         <%if (tested) { %>
             <hr>
             <h3 class="corpo">Sua porcentagem de acerto foi de: <%= grade %> %</h3>
