@@ -1,7 +1,7 @@
 <%@page import="br.com.fatecpg.quiz.Question"%>
 <%@page import="br.com.fatecpg.quiz.Quiz"%>
 <%@page import="br.com.fatecpg.quiz.Bd"%>
-<%@page import="br.com.fatecpg.quiz.Usuario"%>
+<%@page import="br.com.fatecpg.quiz.Jogador"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
